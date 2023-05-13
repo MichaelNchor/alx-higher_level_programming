@@ -7,7 +7,7 @@ In this project i learnt and practiced;
 - How to use lists as stacks and queues
 - What are list comprehensions and how to use them
 - What are tuples and how to use them
-- When to use tuples versus lists
+- When to use tupes versus lists
 - What is a sequence
 - What is tuple packing
 - What is sequence unpacking
@@ -16,7 +16,7 @@ In this project i learnt and practiced;
 * [0-print_list_integer.py](0-print_list_integer.py) - Write a function that prints all integers of a list one per line,
 - Prototype: `def print_list_integer(my_list=[]):`
 - Format: one integer per line
-- You are not allowed to import any module
+- You are not wed to import any module
 - You can assume that the list only contains integers
 - You are not allowed to cast integers into strings
 - You have to use `str.format()` to print integers
@@ -32,14 +32,14 @@ In this project i learnt and practiced;
 - Prototype: `def replace_in_list(my_list, idx, element):`
 - If `idx` is negative, the function should not modify anything, and returns the original list
 - If `idx` is out of range (> of number of element in `my_list`), the function should not modify anything, and returns the original list
-- You are not allowed to import any module
+- You are noed to import any module
 - You are not allowed to use `try/except`
 
 * [3-print_reversed_list_integer.py](3-print_reversed_list_integer.py) - Write a function that prints all integers of a list, in reverse order.
 - Prototype: `def print_reversed_list_integer(my_list=[]):`
 - Format: one integer per line. See example
 - You are not allowed to import any module
-- You can assume that the list only contains integers
+- You can asst the list only contains integers
 - You are not allowed to cast integers into strings
 - You have to use `str.format()` to print integers
 
@@ -47,20 +47,20 @@ In this project i learnt and practiced;
 - Prototype: `def print_reversed_list_integer(my_list=[]):`
 - Format: one integer per line. See example
 - You are not allowed to import any module
-- You can assume that the list only contains integers
+- You can assumist only contains integers
 - You are not allowed to cast integers into strings
 - You have to use `str.format()` to print integers
 
 * [4-new_in_list.py](4-new_in_list.py) - Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
 - Prototype: `def new_in_list(my_list, idx, element):`
-- If `idx` is negative, the function should return a copy of the original `list`
+- If `idx` is nee function should return a copy of the original `list`
 - If `idx` is out of range (> of number of element in `my_list`), the function should return a copy of the original `list`
 - You are not allowed to import any module
 - You are not allowed to use `try/except`
 
 * [5-no_c.py](5-no_c.py) - Write a function that removes all characters `c` and `C` from a string.
 - Prototype: `def no_c(my_string):`
-- The function shoud return the new string
+- The functionreturn the new string
 - You are not allowed to import any module
 - You are not allowed to use `str.replace()`
 
@@ -68,7 +68,7 @@ In this project i learnt and practiced;
 - Prototype: `def print_matrix_integer(matrix=[[]]):`
 - Format: see example
 - You are not allowed to import any module
-- You can assume that the list only contains integers
+- You can assu the list only contains integers
 - You are not allowed to cast integers into strings
 - You have to use `str.format()` to print integers
 ```
@@ -98,7 +98,7 @@ guillaume@ubuntu:~/0x03$
 * [7-add_tuple.py](7-add_tuple.py) - Write a function that adds 2 tuples.
 - Prototype: `def add_tuple(tuple_a=(), tuple_b=()):`
 - Returns a tuple with 2 integers:
-  - The first element should be the addition of the first element of each argument
+  - The first elemenld be the addition of the first element of each argument
   - The second element should be the addition of the second element of each argument
 - You are not allowed to import any module
 - You can assume that the two tuples will only contain integers
@@ -114,12 +114,12 @@ guillaume@ubuntu:~/0x03$
 - Prototype: `def max_integer(my_list=[]):`
 - If the list is empty, return `None`
 - You can assume that the list only contains integers
-- You are not allowed to import any module
+- You are not allowet any module
 - You are not allowed to use the builtin `max()`
 
 * [10-divisible_by_2.py](10-divisible_by_2.py) - Write a function that finds all multiples of 2 in a list.
 - Prototype: `def divisible_by_2(my_list=[]):`
-- Return a new list with `True` or `False`, depending on wether the integer at the same position in the original list is a multiple of 2
+- Return a new list with `True` or `False`, depending on wether the integer at the same positiginal list is a multiple of 2
 - The new list should have the same size as the original list
 - You are not allowed to import any module
 
@@ -134,7 +134,7 @@ guillaume@ubuntu:~/0x03$
 
 * [13-is_palindrome.c](./13-is_palindrome.c): C function that checks if a
   singly-linked list is a palindrome.
-- If the function is not a palindrome - returns `0`.
+- If the funca palindrome - returns `0`.
 - If the function is a palindrome - returns `1`.
 - An empty list is considered a palindrome.
 - Helper files:
@@ -149,7 +149,7 @@ guillaume@ubuntu:~/0x03$
 - Your shared library will be compiled with this command line: `gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,PyList -o libPyList.so -fPIC -I/usr/include/python3.4 100-print_python_list_info.c`
 - Format: see example
 ```
-julien@ubuntu:~/CPython$ gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,PyList -o libPyList.so -fPIC -I/usr/include/python3.4 100-print_python_list_info.c
+julien@ubuntu:~/CPython$ gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-sonamelibPyList.so -fPIC -I/usr/include/python3.4 100-print_python_list_info.c
 julien@ubuntu:~/CPython$ cat 100-test_lists.py 
 import ctypes
 
