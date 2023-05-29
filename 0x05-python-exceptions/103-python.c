@@ -15,7 +15,7 @@ void print_python_float(PyObject *p)
     printf("[.] float object info\n");
     if (!PyFloat_Check(f))
     {
-        printf("  [ERROR] Inalid Float Object\n");
+        printf("  [ERROR] Invalid Float Object\n");
         return;
     }
     
@@ -29,21 +29,21 @@ void print_python_bytes(PyObject *p)
     unsigned int i;
     char *trying_str = NULL;
 
-    printf("[.] bytes obect info\n");
+    printf("[.] bytes object info\n");
     if (!PyBytes_Check(p))
     {
-        printf("  [ERROR] InvaliBytes Object\n");
+        printf("  [ERROR] Invalid Bytes Object\n");
         return;
     }
 
     size = ((PyVarObject *)p)->ob_size;
     trying_str = ((PyBytesObject *)p)->ob_sval;
     printf("  size: %lu\n", size);
-    printf("  trying ring: %s\n", trying_str);
+    printf("  trying string: %s\n", trying_str);
     if (size < 10)
-        printf("  rst %lu bytes:", size + 1);
+        printf("  first %lu bytes:", size + 1);
     else
-        printf("  first 10 btes:");
+        printf("  first 10 bytes:");
     for (i = 0; i <= size && i < 10; i++)
         printf(" %02hhx", trying_str[i]);
     printf("\n");
@@ -56,23 +56,23 @@ void print_python_list(PyObject *p)
     PyListObject *list = (PyListObject *)p;
     const char *type;
 
-    printf("[*] Phon list info\n");
+    printf("[*] Python list info\n");
     if (!PyList_Check(list))
     {
-        printf("  [ERR] Invalid List Object\n");
+        printf("  [ERROR] Invalid List Object\n");
         return;
     }
 
     size = ((PyVarObject *)p)->ob_size;
-    printf("[*] Se of the Python List = %lu\n", size);
-    printf("[*] Allocad = %lu\n", list->allocated);
+    printf("[*] Size of the Python List = %lu\n", size);
+    printf("[*] Allocated = %lu\n", list->allocated);
     for (i = 0; i < size; i++)
     {
         type = (list->ob_item[i])->ob_type->tp_name;
-        printf("ment %i: %s\n", i, type);
-        if (!strcmp(type, "byes"))
+        printf("Element %i: %s\n", i, type);
+        if (!strcmp(type, "bytes"))
             print_python_bytes(list->ob_item[i]);
-        if (!strcmp(type, "floa"))
+        if (!strcmp(type, "float"))
             print_python_float(list->ob_item[i]);
     }
 }
