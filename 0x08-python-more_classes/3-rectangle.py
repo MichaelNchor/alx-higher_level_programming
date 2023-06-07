@@ -13,7 +13,7 @@ class Rectangle:
         """
         Checks the parameters and initializes some values
         Args:
-            width (:obj:`int`, optional): The width of the Rectangle.
+            width  The width of the Rectangle.
             height (:obj:`int`, optional): The height of the Rectangle.
         """
 
@@ -23,7 +23,7 @@ class Rectangle:
     @property
     def width(self):
         """
-        Returns the width of the Rectangle
+        Returns the widthe Rectangle
         """
 
         return self.__width
@@ -31,7 +31,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """
-        Checks the parameters and set the size of the Rectangle
+        Checks the par of the Rectangle
         Args:
             value (int): The width of the Rectangle.
         Raises:
@@ -53,7 +53,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """
-        Checks the parameters and set the size of the Rectangle
+        Checks the phe Rectangle
         Args:
             value (int): The height of the Rectangle.
         Raises:
@@ -71,7 +71,7 @@ class Rectangle:
             width (int): The width of the Rectangle.
         Raises:
             TypeError: If `width` type is not `int`.
-            ValueError: If `width` is less than `0`.
+            ValueError: If `s less than `0`.
         """
 
         if self.__check_int_value(width) is False:
@@ -87,7 +87,7 @@ class Rectangle:
             height (int): The height of the Rectangle.
         Raises:
             TypeError: If `height` type is not `int`.
-            ValueError: If `height` is less than `0`.
+            ValueError: If s less than `0`.
         """
 
         if self.__check_int_value(height) is False:
@@ -98,7 +98,7 @@ class Rectangle:
 
     def __check_int_value(self, value):
         """
-        Checks if the value is an integer
+        e is an integer
         Args:
             value (int): The number to verify
         Returns:
@@ -117,7 +117,7 @@ class Rectangle:
             value (int): The number to verify
         Returns:
             int: `True` If value is greater than
-            or equal to 0, `False` otherwise.
+            or equa otherwise.
         """
 
         if value >= 0:
@@ -138,7 +138,7 @@ class Rectangle:
         """
         Computes the perimeter of a Rectangle.
         Returns:
-            int: The perimeter of a Rectangle.
+            inter of a Rectangle.
         """
 
         if self.__width == 0 or self.__height == 0:
@@ -150,8 +150,7 @@ class Rectangle:
         """
         Draw the Rectangle with their size
         Returns:
-            str: `Empty` If width or height is `0`,
-            otherwise returns a string with the Rectangle.
+            str: `Empty` If width or height rns a string with the Rectangle.
         """
 
         rect_str = ''
@@ -172,7 +171,7 @@ class Rectangle:
 
     def __str__(self):
         """
-        Returns a string with the representation of the Rectangle.
+        Returns a string with tion of the Rectangle.
         """
 
         return self.__draw_rectangle()
